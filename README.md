@@ -1,7 +1,8 @@
+## What is it?
 Python script for downloading images from 4chan threads.
 Simply paste a link as a instruction says and images from all the thread will be downloaded.
 
-dependancies:
+## dependancies:
     beautifulsoup4==4.9.1
     certifi==2020.6.20
     chardet==3.0.4
