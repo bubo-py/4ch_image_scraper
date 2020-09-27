@@ -2,6 +2,14 @@
 Python script for downloading images from 4chan threads.
 Simply paste a link as a instruction says and images from all the thread will be downloaded.
 
+## How to use it?
+Simply type url with the following pattern:
+
+Pattern for putting url is /board/thread/9999
+
+Example:
+https://boards.4channel.org/c/thread/3752784
+
 ## dependancies:
     beautifulsoup4==4.9.1
     certifi==2020.6.20
