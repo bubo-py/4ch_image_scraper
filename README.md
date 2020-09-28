@@ -10,7 +10,7 @@ Pattern for putting url is /board/thread/9999
 Example:
 https://boards.4channel.org/c/thread/3752784
 
-## dependancies:
+## Dependancies:
     beautifulsoup4==4.9.1
     certifi==2020.6.20
     chardet==3.0.4
