@@ -46,7 +46,7 @@ if answer == 'y':
     new_name = input('\nWhat do you want new filename to be?\n') # ask for new filename
     n = 0
     for filename in os.listdir(): # look for files in current directory
-        if filename.endswith('.jpg') or filename.endswith('.png'): # take all jpg/png
+        if filename.endswith('.jpg') or filename.endswith('.png') or filename.endswith('.gif'): # take all jpg/png/gif
             # change to given filename and count them
             os.rename(filename, f'{new_name}_{n}{filename[-4:]}')
             n += 1 # every file increase the number
