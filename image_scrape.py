@@ -50,3 +50,5 @@ if answer == 'y':
             # change to given filename and count them
             os.rename(filename, f'{new_name}_{n}{filename[-4:]}')
             n += 1 # every file increase the number
+
+print('All filenames have been changed!') # additional user feedback
