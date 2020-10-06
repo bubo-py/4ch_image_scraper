@@ -11,6 +11,8 @@ source_code = requests.get(url).text # get url by requests and HTML code by .tex
 
 soup = BeautifulSoup(source_code, 'lxml') # parse HTML code by lxml parser and bs
 
+c = 0
+
 # find all <div> with class 'postContainer' in parsed HTML
 for post in soup.find_all('div', class_='postContainer'):
 
@@ -34,8 +36,9 @@ for post in soup.find_all('div', class_='postContainer'):
     # download image from extracted link with the name that it had
     urlretrieve(f"http://{image_link}", f"{image_name}")
 
-    print(f'Succesfully downloaded {image_name}') # feedback to user
-
+    print(f'#{c} Succesfully downloaded {image_name}') # feedback to user
+    c += 1
+    
 print('All possible images have been downloaded!')
 
 # ask if user want to rename images
