@@ -11,7 +11,7 @@ source_code = requests.get(url).text # get url by requests and HTML code by .tex
 
 soup = BeautifulSoup(source_code, 'lxml') # parse HTML code by lxml parser and bs
 
-c = 0
+c = 1 # set default count value
 
 # find all <div> with class 'postContainer' in parsed HTML
 for post in soup.find_all('div', class_='postContainer'):
@@ -37,7 +37,7 @@ for post in soup.find_all('div', class_='postContainer'):
     urlretrieve(f"http://{image_link}", f"{image_name}")
 
     print(f'#{c} Succesfully downloaded {image_name}') # feedback to user
-    c += 1
+    c += 1 # increase counting images every download image
     
 print('All possible images have been downloaded!')
 
