@@ -1,6 +1,7 @@
 ## What is it?
 Python script for downloading images from 4chan threads.
 Simply paste a link as a instruction says and images from all the thread will be downloaded.
+Works as a webscraper, without using any APIs. Just python libraries.
 
 ## How to use it?
 Simply type url with the following pattern:
