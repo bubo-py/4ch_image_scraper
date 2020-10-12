@@ -1,4 +1,5 @@
 import os
+from shutil import move
 import requests
 from urllib.request import urlretrieve
 from bs4 import BeautifulSoup
@@ -55,3 +56,8 @@ if answer == 'y':
             n += 1 # every file increase the number
 
 print('All filenames have been changed!') # additional user feedback
+
+new_location = "ADD_FOLDER_PATH_HERE"
+for filename in os.listdir():
+    if filename.endswith('.jpg') or filename.endswith('.png') or filename.endswith('.gif'): # take all jpg/png/gif
+        move(f"{filename}", f"{new_location}/{filename}")
