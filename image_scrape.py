@@ -57,7 +57,9 @@ if answer == 'y':
 
 print('All filenames have been changed!') # additional user feedback
 
+# location of the destination folder
 new_location = "ADD_FOLDER_PATH_HERE"
-for filename in os.listdir():
+for filename in os.listdir(): # look for files in current directory
     if filename.endswith('.jpg') or filename.endswith('.png') or filename.endswith('.gif'): # take all jpg/png/gif
+        # shutil method that moves file to different location with the same name
         move(f"{filename}", f"{new_location}/{filename}")
