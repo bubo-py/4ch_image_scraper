@@ -6,18 +6,13 @@ Works as a webscraper, without using any APIs. Just python libraries.
 ## How to use it?
 Simply type url with the following pattern:
 
-Pattern for putting url is /board/thread/9999
+Pattern for putting url is base_url/board_short/thread/9999(thread_number)
 
 Example:
-https://boards.4channel.org/c/thread/3752784
+https://boards.4channel.org/c/thread/3817303
 
 ## Dependencies:
     beautifulsoup4==4.9.1
-    certifi==2020.6.20
-    chardet==3.0.4
-    idna==2.10
     lxml==4.5.2
-    Pillow==7.2.0
     requests==2.24.0
-    soupsieve==2.0.1
     urllib3==1.25.10
