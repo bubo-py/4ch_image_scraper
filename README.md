@@ -6,7 +6,7 @@ Works as a webscraper, without using any APIs. Just python libraries.
 ## How to use it?
 Simply type url with the following pattern:
 
-Pattern for putting url is base_url/board_short/thread/9999(thread_number)
+Pattern for putting url is boards.4channel.org/board/thread/thread_id
 
 Example:
 https://boards.4channel.org/c/thread/3817303
